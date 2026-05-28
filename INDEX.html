@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia Completo Invisalign® — Marina Naves</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,500;1,600&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+
+:root{
+  --bg:#FAF6F3;
+  --bg2:#F0E9DF;
+  --navy:#1B3558;
+  --navy2:#243F62;
+  --ouro:#C4973A;
+  --ob:#D9C48A;
+  --oc:#F0E6CC;
+  --txt:#2D2D2D;
+  --tc:#6B6460;
+  --branco:#FFFFFF;
+  --borda:#DFD3C0;
+  --red:#C0392B;
+  --green:#2E7D5B;
+}
+
+body{
+  font-family:'Montserrat',sans-serif;
+  background:#1A1A1A;
+  margin:0;
+  padding:0;
+}
+
+/* ── Página 1536×1024 ── */
+.page{
+  width:1536px;
+  height:1024px;
+  background:var(--bg);
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  margin:0 auto;
+  border-bottom:6px solid #111;
+}
+
+/* ── Imagens completas ── */
+.page.full-img{ padding:0; }
+.page.full-img img{ width:1536px;height:1024px;display:block;object-fit:cover; }
+
+/* ── Barra dourada ── */
+.bar{
+  height:4px;
+  flex-shrink:0;
+  background:linear-gradient(90deg,transparent,var(--ouro) 15%,var(--ob) 55%,transparent);
+}
+
+/* ── Header ── */
+.ph{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 56px 12px;
+  flex-shrink:0;
+}
+.ph-brand{ display:flex;align-items:center; }
+.ph-brand-txt{ display:flex;flex-direction:column; }
+.ph-brand-name{
+  display:block;
+  font-family:'Montserrat',sans-serif;
+  font-size:17px;
+  font-weight:700;
+  letter-spacing:3.5px;
+  color:var(--ouro);
+  text-transform:uppercase;
+  line-height:1;
+}
+.ph-brand-sub{
+  display:block;
+  font-family:'Montserrat',sans-serif;
+  font-size:10px;
+  font-weight:400;
+  letter-spacing:4px;
+  color:var(--ouro);
+  text-transform:uppercase;
+  opacity:.65;
+  margin-top:5px;
+}
+.ph-deco{ display:flex;flex-direction:column;align-items:flex-end;gap:4px;opacity:.25; }
+.ph-deco span{ display:block;height:1px;background:var(--ouro); }
+
+/* Linha divisória */
+.hdiv{
+  height:1px;
+  background:linear-gradient(90deg,var(--ouro) 0%,var(--ob) 40%,transparent 80%);
+  margin:0 56px;
+  opacity:.45;
+  flex-shrink:0;
+}
+
+/* ── Corpo principal ── */
+.pb{
+  flex:1;
+  padding:20px 56px 18px;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+
+/* ── Título grande da página (estilo das imagens profissionais) ── */
+.ptitle{
+  font-family:'Montserrat',sans-serif;
+  font-size:52px;
+  font-weight:800;
+  color:var(--navy);
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  line-height:1.1;
+  flex-shrink:0;
+  margin-bottom:4px;
+}
+.psubt{
+  font-family:'Montserrat',sans-serif;
+  font-size:19px;
+  font-weight:400;
+  color:var(--tc);
+  margin-bottom:18px;
+  flex-shrink:0;
+}
+.psubt strong{ color:var(--ouro);font-weight:600; }
+
+/* ── Layout de 2 colunas ── */
+.cols{ display:grid;flex:1;gap:40px;overflow:hidden; }
+.cols.c5050{grid-template-columns:1fr 1fr;}
+.cols.c6040{grid-template-columns:1.5fr 1fr;}
+.cols.c4060{grid-template-columns:1fr 1.5fr;}
+.cols.c3070{grid-template-columns:1fr 2fr;}
+.cols.c7030{grid-template-columns:2fr 1fr;}
+
+/* ── Texto corpo ── */
+.bp{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:400;line-height:1.8;color:var(--txt);}
+.bp strong{color:var(--navy);font-weight:700;}
+
+/* ── Separador ── */
+.sep{height:1px;background:var(--borda);margin:10px 0;}
+
+/* ── Ícones em anel ── */
+.ir{
+  width:52px;height:52px;
+  border:1.5px solid var(--ouro);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--navy);flex-shrink:0;
+}
+.ir svg{width:22px;height:22px;}
+.ir-sm{
+  width:36px;height:36px;
+  border:1.5px solid var(--ouro);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--navy);flex-shrink:0;
+}
+.ir-sm svg{width:16px;height:16px;}
+.nr{
+  width:34px;height:34px;
+  border:1.5px solid var(--ouro);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Montserrat',sans-serif;
+  font-size:15px;font-weight:700;
+  color:var(--navy);flex-shrink:0;
+}
+
+/* ── Linha ícone ── */
+.irow{display:flex;align-items:flex-start;gap:16px;padding:11px 0;border-bottom:1px solid var(--borda);}
+.irow:last-child{border-bottom:none;}
+.irt{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;line-height:1.5;color:var(--navy);padding-top:8px;}
+.irt strong{color:var(--navy);font-weight:700;display:block;margin-bottom:1px;}
+.irt.np{padding-top:6px;}
+
+/* ── Linha step ── */
+.srow{display:flex;align-items:flex-start;gap:14px;padding:10px 0;border-bottom:1px solid var(--borda);}
+.srow:last-child{border-bottom:none;}
+.srow-t{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:400;color:var(--txt);padding-top:6px;line-height:1.6;}
+.srow-t strong{color:var(--navy);font-weight:700;}
+
+/* ── Linha X (proibição) ── */
+.xrow{display:flex;align-items:flex-start;gap:14px;padding:10px 0;border-bottom:1px solid var(--borda);}
+.xrow:last-child{border-bottom:none;}
+.xrow-t{font-family:'Montserrat',sans-serif;font-size:15px;font-weight:500;color:var(--txt);padding-top:5px;}
+.xrow-t strong{color:var(--navy);font-weight:700;display:block;margin-bottom:2px;}
+.xrow-t small{font-size:13px;font-weight:400;color:var(--tc);}
+
+/* ── Cards ── */
+.cw{background:var(--branco);border:1px solid var(--borda);border-radius:14px;padding:20px 24px;}
+.cc{background:var(--bg2);border-radius:14px;padding:16px 18px;}
+
+/* ── Bloco navy ── */
+.nb{background:var(--navy);border-radius:14px;padding:18px 22px;}
+.nb p{font-family:'Montserrat',sans-serif;font-size:15px;font-weight:500;line-height:1.7;color:rgba(255,255,255,.92);}
+.nb strong{font-family:'Montserrat',sans-serif;color:var(--oc);display:block;font-size:16px;font-weight:700;margin-bottom:4px;}
+
+/* ── Stat ── */
+.stat{background:var(--navy);border-radius:14px;padding:24px;text-align:center;color:white;}
+.stat-n{font-family:'Montserrat',sans-serif;font-size:64px;font-weight:800;color:var(--oc);line-height:1;}
+.stat-l{font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.65;margin-top:6px;}
+
+/* ── Highlight box ── */
+.hl{border:1.5px solid var(--ob);border-radius:12px;padding:14px 18px;}
+.hl-red{border:1.5px solid #D9A9A4;background:#FDF2F1;border-radius:12px;padding:14px 18px;}
+
+/* ── Grid ── */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
+
+/* ── Mini card ── */
+.mc{background:var(--bg2);border-radius:12px;padding:16px 14px;text-align:center;}
+.mc svg{width:24px;height:24px;color:var(--ouro);display:block;margin:0 auto;}
+.mc-t{font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.8px;margin-top:8px;}
+
+/* ── Checklist ── */
+.crow{display:flex;align-items:flex-start;gap:14px;padding:9px 0;border-bottom:1px solid var(--borda);}
+.crow:last-child{border-bottom:none;}
+.csq{width:20px;height:20px;border:1.5px solid var(--ob);border-radius:4px;background:white;flex-shrink:0;margin-top:2px;}
+.cl strong{font-family:'Montserrat',sans-serif;display:block;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:1px;}
+.cl span{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:400;color:var(--tc);line-height:1.5;}
+
+/* ── Quote (bloco elegante em navy) ── */
+.qt{background:var(--navy);border-radius:14px;padding:36px 32px;text-align:center;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.qt-t{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;font-style:italic;color:var(--oc);line-height:1.45;}
+.qt-r{width:36px;height:1px;background:var(--ouro);margin:16px auto;opacity:.5;}
+.qt-s{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:500;font-style:italic;color:rgba(255,255,255,.75);line-height:1.75;}
+
+/* ── Correto/Errado ── */
+.ok-box{background:#EEF6F1;border:1px solid #B8DFC9;border-radius:12px;padding:16px;text-align:center;}
+.ok-box svg{width:26px;height:26px;color:#2E7D5B;display:block;margin:0 auto 6px;}
+.ok-t{font-size:11px;font-weight:700;color:#2E7D5B;text-transform:uppercase;letter-spacing:.8px;}
+.ok-p{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:500;color:#2E6B50;margin-top:4px;line-height:1.4;}
+.no-box{background:#FDF2F1;border:1px solid #D9A9A4;border-radius:12px;padding:16px;text-align:center;}
+.no-box svg{width:26px;height:26px;color:var(--red);display:block;margin:0 auto 6px;}
+.no-t{font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.8px;}
+.no-p{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:500;color:#8A3030;margin-top:4px;line-height:1.4;}
+
+/* ── Decoração ── */
+.deco{position:absolute;pointer-events:none;}
+</style>
+</head>
+<body>
+
+<!-- ================================================================
+     CAPA
+================================================================ -->
+<div class="page full-img">
+  <img src="images/marina_ebook GUIA COMPLETO.png" alt="Capa">
+</div>
+
+
+<!-- ================================================================
+     01 — BOAS-VINDAS
+================================================================ -->
+<div class="page">
+  <div class="bar"></div>
+  <div class="ph">
+    <div class="ph-brand">
+      <div class="ph-brand-txt">
+        <span class="ph-brand-name">Marina Naves</span>
+        <span class="ph-brand-sub">Odontologia Especializada</span>
+      </div>
+    </div>
+    <div class="ph-deco">
+      <span style="width:80px;"></span>
+      <span style="width:55px;margin-right:14px;"></span>
+      <span style="width:32px;margin-right:26px;"></span>
+    </div>
+  </div>
+  <div class="hdiv"></div>
+
+  <svg class="deco" style="bottom:0;right:0;width:380px;height:340px;opacity:.22;" viewBox="0 0 380 340" fill="none">
+    <path d="M380 80 Q270 160 230 260 Q195 340 155 330" stroke="#C4973A" stroke-width="2" fill="none"/>
+    <path d="M380 130 Q278 206 240 300 Q205 370 165 360" stroke="#C4973A" stroke-width="1.2" fill="none"/>
+    <path d="M380 40 Q300 110 265 200 Q232 278 205 270" stroke="#C4973A" stroke-width=".7" fill="none"/>
+  </svg>
+
+  <div class="pb">
+    <h1 class="ptitle">Boas-Vindas</h1>
+    <p class="psubt">Seu guia completo para um tratamento <strong>de sucesso</strong></p>
+
+    <div class="cols c5050">
+      <!-- Foto -->
+      <div style="overflow:hidden;border-radius:14px;">
+        <img src="images/Paciente usando alinhador + ambiente clínico.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+
+      <!-- Texto -->
+      <div style="display:flex;flex-direction:column;justify-content:center;gap:20px;">
+        <p class="bp">Parabéns por iniciar seu tratamento com <strong>Invisalign®</strong>.</p>
+        <p class="bp">O sucesso depende diretamente da sua <strong>disciplina</strong> e dos cuidados diários com seus alinhadores.</p>
+        <p class="bp">Este guia foi criado para te acompanhar em <strong>cada etapa</strong> do tratamento.</p>
+
+        <div class="hl" style="display:flex;align-items:center;gap:16px;">
+          <div class="ir-sm" style="flex-shrink:0;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <p style="font-family:'Montserrat',sans-serif;font-size:15px;font-weight:600;color:var(--navy);line-height:1.55;">Estamos juntos nessa jornada pelo seu melhor sorriso!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bar"></div>
+</div>
+
+
+<!-- ================================================================
+     02 — APLICATIVO OFICIAL INVISALIGN®
+================================================================ -->
+<div class="page full-img">
+  <img src="images/aplicativo.png" alt="Aplicativo Oficial Invisalign">
+</div>
+
+
+<!-- ================================================================
+     03 — USE 22 HORAS POR DIA
+================================================================ -->
+<div class="page full-img">
+  <img src="images/marina_ebook22H POR DIA.png" alt="Use 22 horas por dia">
+</div>
+
+
+<!-- ================================================================
+     04 — TROCA DAS PLACAS
+================================================================ -->
+<div class="page full-img">
+  <img src="images/marina_ebook TROCA DAS PLACAS.png" alt="Troca das Placas">
+</div>
+
+
+<!-- ================================================================
+     05 — HIGIENIZAÇÃO DIÁRIA
+================================================================ -->
+<div class="page full-img">
+  <img src="images/marina_ ebook_HIGIENIZAÇÃO DIARIA.png" alt="Higienização Diária">
+</div>
+
+
+<!-- ================================================================
+     06 — LIMPEZA PROFUNDA SEMANAL
+================================================================ -->
+<div class="page full-img">
+  <img src="images/LIMPEA PROFUNDA SEMANAL.png" alt="Limpeza Profunda Semanal">
+</div>
+
+
+<!-- ================================================================
+     07 — HIGIENE BUCAL
+================================================================ -->
+<div class="page full-img">
+  <img src="images/HIGIENE BUCAL.png" alt="Higiene Bucal">
+</div>
+
+
+<!-- ================================================================
+     10 — DESCONFORTO É NORMAL
+================================================================ -->
+<div class="page full-img">
+  <img src="images/DESCONFORTO .png" alt="Desconforto é Normal">
+</div>
+
+
+<!-- ================================================================
+     11 — GUARDE SEMPRE NA CAIXINHA
+================================================================ -->
+<div class="page">
+  <div class="bar"></div>
+  <div class="ph">
+    <div class="ph-brand">
+      <div class="ph-brand-txt">
+        <span class="ph-brand-name">Marina Naves</span>
+        <span class="ph-brand-sub">Odontologia Especializada</span>
+      </div>
+    </div>
+    <div class="ph-deco">
+      <span style="width:80px;"></span><span style="width:55px;margin-right:14px;"></span><span style="width:32px;margin-right:26px;"></span>
+    </div>
+  </div>
+  <div class="hdiv"></div>
+
+  <svg class="deco" style="bottom:0;right:0;width:380px;height:340px;opacity:.22;" viewBox="0 0 380 340" fill="none">
+    <path d="M380 80 Q270 160 230 260 Q195 340 155 330" stroke="#C4973A" stroke-width="2" fill="none"/>
+    <path d="M380 130 Q278 206 240 300 Q205 370 165 360" stroke="#C4973A" stroke-width="1.2" fill="none"/>
+    <path d="M380 40 Q300 110 265 200 Q232 278 205 270" stroke="#C4973A" stroke-width=".7" fill="none"/>
+  </svg>
+
+  <div class="pb">
+    <h1 class="ptitle">Guarde na Caixinha</h1>
+    <p class="psubt">Sempre que retirar o alinhador, guarde <strong>imediatamente no estojo</strong></p>
+
+    <div class="cols c5050">
+      <!-- Conteúdo -->
+      <div style="display:flex;flex-direction:column;justify-content:space-between;height:100%;">
+        <div>
+          <div class="xrow">
+            <div class="ir-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></div>
+            <div class="xrow-t"><strong>Nunca deixar solto</strong><small>Risco de contaminação imediata</small></div>
+          </div>
+          <div class="xrow">
+            <div class="ir-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></div>
+            <div class="xrow-t"><strong>Risco de perda</strong><small>Guardanapo é a principal causa de perda</small></div>
+          </div>
+          <div class="xrow">
+            <div class="ir-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></div>
+            <div class="xrow-t"><strong>Contaminação</strong><small>Superfícies, bolsos e bolsas são vetores</small></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="g2" style="margin-bottom:12px;">
+            <div class="ok-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <div class="ok-t">CERTO</div>
+              <div class="ok-p">Guarde na caixinha sempre!</div>
+            </div>
+            <div class="no-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+              <div class="no-t">ERRADO</div>
+              <div class="no-p">Nunca solto em qualquer lugar.</div>
+            </div>
+          </div>
+
+          <div class="hl-red" style="display:flex;align-items:center;gap:12px;">
+            <svg style="width:18px;height:18px;color:var(--red);flex-shrink:0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <p style="font-family:'Montserrat',sans-serif;font-size:13px;font-weight:500;color:#7A2020;">A maioria das perdas acontece durante as refeições.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foto -->
+      <div style="overflow:hidden;border-radius:14px;">
+        <img src="images/│ Foto:imagem 3D dos alinhadores Invisalign .jpeg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+    </div>
+  </div>
+
+  <div class="bar"></div>
+</div>
+
+
+<!-- ================================================================
+     12 — QUANDO FALAR COM O DENTISTA
+================================================================ -->
+<div class="page full-img">
+  <img src="images/marina_ebook QUNADO FALAR COM O DENTISTA.png" alt="Quando Falar com o Dentista">
+</div>
+
+
+<!-- ================================================================
+     CHECKLIST DO PACIENTE
+================================================================ -->
+<div class="page">
+  <div class="bar"></div>
+  <div class="ph">
+    <div class="ph-brand">
+      <div class="ph-brand-txt">
+        <span class="ph-brand-name">Marina Naves</span>
+        <span class="ph-brand-sub">Odontologia Especializada</span>
+      </div>
+    </div>
+    <div class="ph-deco">
+      <span style="width:80px;"></span><span style="width:55px;margin-right:14px;"></span><span style="width:32px;margin-right:26px;"></span>
+    </div>
+  </div>
+  <div class="hdiv"></div>
+
+  <svg class="deco" style="bottom:0;right:0;width:380px;height:340px;opacity:.22;" viewBox="0 0 380 340" fill="none">
+    <path d="M380 80 Q270 160 230 260 Q195 340 155 330" stroke="#C4973A" stroke-width="2" fill="none"/>
+    <path d="M380 130 Q278 206 240 300 Q205 370 165 360" stroke="#C4973A" stroke-width="1.2" fill="none"/>
+    <path d="M380 40 Q300 110 265 200 Q232 278 205 270" stroke="#C4973A" stroke-width=".7" fill="none"/>
+  </svg>
+
+  <div class="pb">
+    <h1 class="ptitle">Checklist do Paciente</h1>
+    <p class="psubt">Pequenas atitudes diárias, <strong>grandes resultados</strong></p>
+
+    <div class="cols c5050">
+      <!-- Checklist -->
+      <div class="cw">
+        <div class="crow">
+          <div class="csq"></div>
+          <div class="cl"><strong>Usei 22h hoje</strong><span>Remova apenas para comer, beber e higienizar</span></div>
+        </div>
+        <div class="crow">
+          <div class="csq"></div>
+          <div class="cl"><strong>Escovei antes de recolocar</strong><span>Nunca recoloque sem escovar</span></div>
+        </div>
+        <div class="crow">
+          <div class="csq"></div>
+          <div class="cl"><strong>Higienizei meu alinhador</strong><span>Escova macia + sabão neutro</span></div>
+        </div>
+        <div class="crow">
+          <div class="csq"></div>
+          <div class="cl"><strong>Usei fio dental</strong><span>Todos os dias</span></div>
+        </div>
+        <div class="crow">
+          <div class="csq"></div>
+          <div class="cl"><strong>Guardei na caixinha</strong><span>Sempre que removi o alinhador</span></div>
+        </div>
+        <div class="crow">
+          <div class="csq"></div>
+          <div class="cl"><strong>Fiz limpeza semanal</strong><span>Pastilha efervescente Corega Tabs®</span></div>
+        </div>
+        <div class="crow">
+          <div class="csq"></div>
+          <div class="cl"><strong>Conferi a troca da placa</strong><span>Sequência numerada</span></div>
+        </div>
+        <div class="crow">
+          <div class="csq"></div>
+          <div class="cl"><strong>Segui as orientações do meu dentista</strong></div>
+        </div>
+      </div>
+
+      <!-- Frase final -->
+      <div class="qt">
+        <p class="qt-t">Seu sorriso está sendo<br>construído todos os dias.</p>
+        <div class="qt-r"></div>
+        <p class="qt-s">Continue com dedicação. Cada hora com o alinhador é um passo mais perto do resultado que você merece.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bar"></div>
+</div>
+
+<script>
+function scalePages() {
+  var s = Math.min(window.innerWidth / 1536, 1);
+  document.querySelectorAll('.page').forEach(function(p) {
+    p.style.transform = 'scale(' + s + ')';
+    p.style.transformOrigin = 'top left';
+    p.style.marginBottom = Math.round((s - 1) * 1030) + 'px';
+  });
+}
+scalePages();
+window.addEventListener('resize', scalePages);
+</script>
+</body>
+</html>
